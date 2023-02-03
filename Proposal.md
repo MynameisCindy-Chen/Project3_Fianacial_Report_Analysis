@@ -16,4 +16,4 @@
 - Graph patterns
 - Moving Averages and price trends
 - Ratio Analysis: Profitability ratios, Liquidity ratios, Leverage ratios and Activities ratios
-
+- Competition: Veritiv vs Domtar
