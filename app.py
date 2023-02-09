@@ -12,13 +12,14 @@ st.set_page_config(page_title="International Paper Financial Report Presentation
 st.sidebar.success("Presentation Outline")
 
 with st.sidebar:
-    add_radio = st.radio(b"Revenue/NetSales Forcast:", ("Financial Data Performance and Visualization", "Check Stationary", "Auto-ARIMA/ARIMA Model Fitting", "Forecasting"))
+    add_radio = st.radio("Revenue/NetSales Forcast:", ("Financial Data Performance and Visualization", "Check Stationary", "Differencing and Autocorrelation", "Auto-ARIMA/ARIMA Model Fitting", "Forecasting"))
 
 # Adding title
 st.title("International Paper Financial Report Analysis")
+st.snow()
 
 # Add subheader
-st.subheader("International Paper - Financial data from 1993 to 2022")
+st.header("International Paper - Financial data from 1993 to 2022")
 
 # Import data
 data = pd.read_csv("interational_paper_company.csv")
@@ -87,7 +88,7 @@ st.markdown('**After checking difference and autocorrelation in both seasonal an
 
 # Fit Auto-ARIMA Model
 st.text('\n')
-st.subheader("Step2: Fit an Auto-ARIMA Model")
+st.subheader("Step3: Fit an Auto-ARIMA Model")
 image7 = Image.open('./image/Auto-ARIMA Result.PNG')
 st.image(image7)
 st.markdown('**Summary:**')
